@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BLETest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfj-2e-wfE">
+                                <rect key="frame" x="418.5" y="298" width="59" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="75h-xk-b1x"/>
+                                    <constraint firstAttribute="width" constant="59" id="h8D-WI-2WF"/>
+                                </constraints>
+                                <state key="normal" title="Connect"/>
+                                <connections>
+                                    <action selector="scanButtonTouched:" destination="BYZ-38-t0r" eventType="touchDown" id="Obg-28-zWN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBm-Ly-hCV">
+                                <rect key="frame" x="409" y="335" width="78" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ND4-sL-zUu"/>
+                                    <constraint firstAttribute="width" constant="78" id="yZg-7m-w3f"/>
+                                </constraints>
+                                <state key="normal" title="Disconnect"/>
+                                <connections>
+                                    <action selector="disconnectTouched:" destination="BYZ-38-t0r" eventType="touchDown" id="xYw-9Q-NVo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZn-LN-60S">
+                                <rect key="frame" x="144" y="116.5" width="55" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="I58-jH-I3K"/>
+                                    <constraint firstAttribute="height" constant="55" id="SJm-Hk-jjy"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="arrowtriangle.up" catalog="system"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6pC-Fw-r76">
+                                <rect key="frame" x="144" y="225.5" width="55" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="sH2-DY-GWZ"/>
+                                    <constraint firstAttribute="height" constant="55" id="xZN-7P-7zw"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="arrowtriangle.down" catalog="system"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ol8-H4-ih1">
+                                <rect key="frame" x="610" y="171" width="55" height="50.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="EUF-DE-w6v"/>
+                                    <constraint firstAttribute="width" constant="55" id="KjE-Cq-uNQ"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="arrowtriangle.left" catalog="system"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTJ-6f-0NQ">
+                                <rect key="frame" x="705" y="171" width="55" height="50.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="1EZ-tE-UhR"/>
+                                    <constraint firstAttribute="height" constant="55" id="lii-wB-uJH"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="arrowtriangle.right" catalog="system"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Afs-gq-yhQ">
+                                <rect key="frame" x="128" y="189.5" width="87" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="87" id="GJY-Ef-vUq"/>
+                                    <constraint firstAttribute="height" constant="14" id="Zyk-fm-v92"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xTJ-6f-0NQ" firstAttribute="leading" secondItem="Ol8-H4-ih1" secondAttribute="trailing" constant="40" id="6s6-IV-ptZ"/>
+                            <constraint firstItem="Ol8-H4-ih1" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="79e-gR-sfq"/>
+                            <constraint firstItem="xTJ-6f-0NQ" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Ata-Ln-Ep6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xTJ-6f-0NQ" secondAttribute="trailing" constant="92" id="HnW-c4-xfe"/>
+                            <constraint firstItem="wBm-Ly-hCV" firstAttribute="top" secondItem="rfj-2e-wfE" secondAttribute="bottom" constant="7" id="LI5-Ep-UK7"/>
+                            <constraint firstItem="Afs-gq-yhQ" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="MY4-v0-hqn"/>
+                            <constraint firstItem="6pC-Fw-r76" firstAttribute="top" secondItem="Afs-gq-yhQ" secondAttribute="bottom" constant="20" id="S1n-U1-yiq"/>
+                            <constraint firstItem="6pC-Fw-r76" firstAttribute="centerX" secondItem="Afs-gq-yhQ" secondAttribute="centerX" id="Xyl-Tw-vka"/>
+                            <constraint firstItem="GZn-LN-60S" firstAttribute="centerX" secondItem="Afs-gq-yhQ" secondAttribute="centerX" id="a8g-Qy-NEe"/>
+                            <constraint firstItem="wBm-Ly-hCV" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="cpY-1G-lg4"/>
+                            <constraint firstItem="Afs-gq-yhQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="84" id="gQ6-wV-K25"/>
+                            <constraint firstItem="Afs-gq-yhQ" firstAttribute="top" secondItem="GZn-LN-60S" secondAttribute="bottom" constant="20" id="jxg-gb-lti"/>
+                            <constraint firstItem="rfj-2e-wfE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="rYH-xg-YfP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wBm-Ly-hCV" secondAttribute="bottom" constant="28" id="uYC-Fo-Um6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="connectButton" destination="rfj-2e-wfE" id="duL-gb-k9G"/>
+                        <outlet property="disconnectButton" destination="wBm-Ly-hCV" id="bJ1-QT-TFY"/>
+                        <outlet property="down1" destination="6pC-Fw-r76" id="1am-dU-jgk"/>
+                        <outlet property="left1" destination="Ol8-H4-ih1" id="9U5-Mn-eZR"/>
+                        <outlet property="right1" destination="xTJ-6f-0NQ" id="Zcu-TG-KRN"/>
+                        <outlet property="up1" destination="GZn-LN-60S" id="iZD-R4-4Sx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-678.34821428571422" y="20.289855072463769"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrowtriangle.down" catalog="system" width="128" height="124"/>
+        <image name="arrowtriangle.left" catalog="system" width="128" height="113"/>
+        <image name="arrowtriangle.right" catalog="system" width="128" height="113"/>
+        <image name="arrowtriangle.up" catalog="system" width="128" height="124"/>
+    </resources>
+</document>
